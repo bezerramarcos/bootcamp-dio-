@@ -1,0 +1,51 @@
+criando diretorios 
+ 
+mkdir / publico
+ mkdir /adm
+ mkdir / usuario
+ mkdir / usuario2
+
+ "criando grupos de usuarios ...."
+   groupad GRO_ADM
+   groupad GRO_USA
+   groupad GRO_SUA2
+ 
+ " criando usuarios "
+useradd joao -m -s /bin/bash -p$(opensal passwd -crypt senha123) -G GRP_ADM
+useradd maria -m -s /bin/bash -p$(opensal passwd -crypt senha123) -G GRP_ADM
+useradd pedro -m -s /bin/bash -p$(opensal passwd -crypt senha123) -G GRP_ADM
+useradd carol -m -s /bin/bash -p$(opensal passwd -crypt senha123) -G GRP_ADM
+
+useradd joao -m -s /bin/bash -p$(opensal passwd -crypt senha123) -G GRP_ADM
+useradd maria -m -s /bin/bash -p$(opensal passwd -crypt senha123) -G GRP_ADM
+useradd pedro -m -s /bin/bash -p$(opensal passwd -crypt senha123) -G GRP_ADM
+useradd carol -m -s /bin/bash -p$(opensal passwd -crypt senha123) -G GRP_ADM
+
+useradd joao -m -s /bin/bash -p$(opensal passwd -crypt senha123) -G GRP_ADM
+useradd maria -m -s /bin/bash -p$(opensal passwd -crypt senha123) -G GRP_ADM
+useradd pedro -m -s /bin/bash -p$(opensal passwd -crypt senha123) -G GRP_ADM
+useradd carol -m -s /bin/bash -p$(opensal passwd -crypt senha123) -G GRP_ADM
+
+  "especificando permissoes dos diretorios"
+chown root:GRP_ADM /adm
+ chown root:GRP_ADM /usa
+chown root:GRP_ADM /usa2
+
+chmod 770 /adm
+chmod 770 /usa
+chmod 770/usa2
+
+chmod 770/publico.
+
+
+
+
+
+
+
+
+
+
+
+
+
